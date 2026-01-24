@@ -9,7 +9,7 @@ public class MainSceneManager : MonoBehaviour
     {
         _mainGameStateHandler = new MainGameStateHandler();
         _mainGameStateHandler.Initialize();
-        _mainGameStateHandler.MainGameState.Subscribe(state =>
+        _mainGameStateHandler.State.Subscribe(state =>
         {
             switch (state)
             {
